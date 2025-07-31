@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تمرين 16: تخطيط متجاوب</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        .container {
+            display: grid;
+            gap: 15px;
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+        
+        .item {
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        @media (min-width: 992px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (min-width: 768px) and (max-width: 991px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>تمرين 16: تخطيط متجاوب</h1>
+    
+    <div class="container">
+        <div class="item">الصندوق 1</div>
+        <div class="item">الصندوق 2</div>
+        <div class="item">الصندوق 3</div>
+        <div class="item">الصندوق 4</div>
+        <div class="item">الصندوق 5</div>
+        <div class="item">الصندوق 6</div>
+    </div>
+</body>
+</html>
